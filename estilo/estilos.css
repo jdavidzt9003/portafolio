@@ -15,16 +15,18 @@ ol, ul{
     background-color: #1b2127;
     color:white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
 }
 
 .header a {
     color: white;
     text-decoration: none;
     height: inherit;
-    display: flex;
+     display: flex;
     align-items: center;
+    /* justify-content: center; */
     padding: 0 10px;
 }
 
@@ -41,6 +43,10 @@ ol, ul{
     height: inherit;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4{
     font-family: 'Fjalla One',sans-serif;
     font-weight: normal;
@@ -51,24 +57,41 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: white;  
+    margin: 0;
 }
 
 h1 strong{
     color: #026fff;
 }
 
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .hero{
     height: 300px;
-    background-image: url('../imagen/web.jpg');
+    /* background-image: url('../imagen/web.jpg'); */
     background-color: #1b2127;
     background-size: 500px 300px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position-x: right;
-    
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+}
+
+.hero-img{
+    object-fit: cover;
 }
 
 .portfolio{
     background-color: #fafafa;
+    padding: 20px;
 }
 
 .project{
@@ -78,15 +101,35 @@ h1 strong{
     border-left: 10px solid blue;*/
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
+    /*margin: 10px;*/
     margin-bottom: 15px;
     padding: 20px;
     background: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .project-details{
     width: 500px;
+}
+
+.project-date, .project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .project-img{
@@ -94,3 +137,98 @@ h1 strong{
     justify-content: center;
 }
 
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a{
+    color: white;
+    padding-right: 20px;
+}
+
+.footer-copy{
+    padding-left: 20px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter{
+    background-image: url(../imagen/twitter.png);
+    
+}
+
+.social-link.facebook{
+    background-image: url(../imagen/facebook.png);
+    
+}
+
+.social-link.github{
+    background-image: url(../imagen/github.png);
+    
+}
+
+.social-link.instagram{
+    background-image: url(../imagen/instagram.png);   
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../imagen/email.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    width: 100px;
+    margin: 10px auto 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+}
